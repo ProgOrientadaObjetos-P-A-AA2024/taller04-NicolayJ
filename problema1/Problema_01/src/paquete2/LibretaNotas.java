@@ -4,10 +4,6 @@
  */
 package paquete2;
 
-/**
- *
- * @author dj931
- */
 public class LibretaNotas {
 
     private String nombreEstudiante;
@@ -15,7 +11,8 @@ public class LibretaNotas {
     private double calificacion02;
     private double calificacion03;
     private double promedioNota;
-
+    
+    // Los constructores pueden tener el mismo nombre pero debe varias sus parametros
     public LibretaNotas(String n, double c1, double c2, double c3) {
         nombreEstudiante = n;
         calificacion01 = c1;
