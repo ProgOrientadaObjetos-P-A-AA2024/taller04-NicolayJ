@@ -27,22 +27,6 @@ public class LibretaNotas {
         calificacion03 = 10;
     }
     
-    @Override
-    public String toString(){
-        String cadena = String.format("LIBRETAS DE CALIFICACIONES \n"
-                + "Nombre del Estudiante: %s\n"
-                + "Calificacion 1: %.3f\n"
-                + "Calificacion 2: %.3f\n"
-                + "Calificacion 3: %.3f\n"
-                + "Promedio Final: %.3f\n",
-                nombreEstudiante,
-                obtenerCalificacion01(),
-                obtenerCalificacion02(),
-                obtenerCalificacion03(),
-                obtenerPromedioNotas());
-        return cadena;
-    }
-    
     public void establecerNombreEstudiante(String x) {
         nombreEstudiante = x;
     }
@@ -82,5 +66,19 @@ public class LibretaNotas {
     public double obtenerPromedioNotas() {
         return promedioNota;
     }
-    
+    @Override
+    public String toString(){
+        String cadena = String.format("LIBRETAS DE CALIFICACIONES \n"
+                + " Nombre del Estudiante: %s\n"
+                + " Calificacion 1: %.3f\n"
+                + " Calificacion 2: %.3f\n"
+                + " Calificacion 3: %.3f\n"
+                + " Promedio Final: %.3f\n",
+                nombreEstudiante,
+                obtenerCalificacion01(),
+                obtenerCalificacion02(),
+                obtenerCalificacion03(),
+                obtenerPromedioNotas());
+        return cadena;
+    }
 }
