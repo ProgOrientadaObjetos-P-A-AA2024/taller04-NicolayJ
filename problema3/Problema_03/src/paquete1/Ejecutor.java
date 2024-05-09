@@ -10,7 +10,7 @@ public class Ejecutor {
     public static void main(String[] args) {
         
         Automotor auto1 = new Automotor("1167723495", "Hyundai", 
-                2014, 22.500);
+                2014, 35000);
         auto1.calcularValorMatricula();
         
         Automotor auto2 = new Automotor("1168437512", "Toyota");

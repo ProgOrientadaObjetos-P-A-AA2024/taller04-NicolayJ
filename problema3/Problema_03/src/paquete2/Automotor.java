@@ -22,7 +22,7 @@ public class Automotor {
         cedulaDuenio = ced;
         marcaVehiculo = marca;
         anioFabricacion = 2000;
-        valorVehiculo = 7.500;
+        valorVehiculo = 7500;
     }
     
     public void establecerCedulaDuenio(String ced){
@@ -42,8 +42,7 @@ public class Automotor {
     }
     
     public void calcularValorMatricula(){
-        int antiguedad = 2024 - anioFabricacion; 
-        valorMatricula = valorVehiculo * 0.00002 * antiguedad; 
+        valorMatricula = valorVehiculo * 0.00002 * (2024 - anioFabricacion); 
     }
     
     public String obtenerCedulaDuenio(){
@@ -71,8 +70,8 @@ public class Automotor {
                 + " Cedula del duenio: %s\n"
                 + " Marca del vehiculo: %s\n"
                 + " Anio de Fabricacion: %d\n"
-                + " Valor del vehiculo: $ %.3f\n"
-                + " Valor de la matricula: $ %.4f\n",
+                + " Valor del vehiculo: $ %.2f\n"
+                + " Valor de la matricula: $ %.2f\n",
                 obtenerCedulaDuenio(),
                 obtenerMarcaVehiculo(),
                 obtenerAnioFabricacion(),
